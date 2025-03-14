@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/fonts.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <link rel="icon" type="image/svg" href="/logo.svg" />
+
+    <title>Cosmetics</title>
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="header__wrapper">
+            <div class="header__logo">
+                <img src="./logo.svg" alt="">
+            </div>
+            <ul class="header__list header__list-pc">
+                <a href="">
+                    <li>Ассортимент</li>
+                </a>
+                <a href="">
+                    <li>Ламинария листовая</li>
+                </a>
+                <a href="">
+                    <li>Команда</li>
+                </a>
+                <a href="">
+                    <li>Новости</li>
+                </a>
+            </ul>
+            <div class="header__link-pc header__link">
+                <div class="header__info header__info-pc">
+                    <a href="#" class="header__info-number">+7 (923) 165 86 00</a>
+                    <a href="#" class="header__info-email">glav.cosmetic@yandex.ru</a>
+                </div>
+                <button class="header__link-button animated__button blur-effect">
+                    <img src="./public/icons/message.svg" alt="">
+                    <p>Получить консультацию</p>
+                </button>
+            </div>
+            <div class="header__toggle-button " id="headerMenu">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+            
+        </div>
+        <div class="header__menu-mobile">
+            <ul class="header__list header__list-mob">
+                <a href="">
+                    <li>Ассортимент</li>
+                </a>
+                <a href="">
+                    <li>Ламинария листовая</li>
+                </a>
+                <a href="">
+                    <li>Команда</li>
+                </a>
+                <a href="">
+                    <li>Новости</li>
+                </a>
+            </ul>
+            <div class="header__link-mob header__link">
+                <div class="header__info header__info-pc">
+                    <a href="#" class="header__info-number">+7 (923) 165 86 00</a>
+                    <a href="#" class="header__info-email">glav.cosmetic@yandex.ru</a>
+                </div>
+                <button class="header__link-button">Получить консультацию</button>
+            </div>
+        </div>
+    </header>
+    <main class="main" id="main">
+        <div class="wrapper">
+            <section class="section welcome">
+                <div class="container">
+                    <div class="welcome__title">
+                        <h1>Главный косметический завод</h1>
+                        <p class="welcome__title-disc-pc">от идеи до готового продукта с <br> минимальным заказом от 100 000 рублей</p>
+                    </div>
+                    <div class="welcome__intro">
+                        <p class="welcome__intro-first">производим косметику</p>
+                        <p class="welcome__intro-second">с 2016 года</p>
+                        <div class="welcome__intro-block">
+                            за 21 день
+                        </div>
+                    </div>
+                    <p class="welcome__title-disc-mob">от идеи до готового продукта с <br> минимальным заказом от 100 000 рублей</p>
+                    <div class="welcome__footer">
+                        <div class="welcome__footer-item">
+                            Полный цикл <br> производства
+                        </div>
+                        <div class="welcome__footer-item">
+                            Свои <br> производственные цеха
+                        </div>
+                        <div class="welcome__footer-item">
+                            Более 1000 <br> проверенных рецептур 
+                        </div>
+                        <div class="welcome__footer-item">
+                            Разнообразный <br> ассортимент тары
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section assortment">
+                <div class="container assortment__container">
+                    <h2>Ассортимент</h2>
+                    <div class="assortment__disc">
+                        <p class="assortment__disc-text">Собственная лаборатория компании разработала более 1 000 рецептур, каждая из которых прошла тестирования и может быть адаптирована под ваш запрос. А если в наших рецептурах не окажется того что хочется именно вам, наш технолог создаст рецептуру для вас.</p>
+                        <button class=" assortment__disc-button animated__button">
+                            <img src="./public/icons/message.svg" alt="">
+                            <p>Получить прайс</p>
+                        </button>
+                    </div>
+                    <div class="assortment__list">
+                        <div class="assortment__item blur-effect">
+                            <div class="assortment__item-img">
+                                <img src="./public/img/assortment-1.png" alt="Ассортимент Лицо">
+                                
+                            </div>
+                            <div class="assortment__item-disc">
+                                <h5>Лицо</h5>
+                                <ul class="assortment__item-points">
+                                    <li>- Пенки для умывания </li>
+                                    <li>- Масло гидрофильное</li>
+                                    <li>- Крем для лица</li>
+                                    <li>- Бальзамы для губ</li>
+                                    <li>- Скрабы для губ</li>
+                                    <li>- Тканевые маски</li>
+                                    <li>- Тоник – лосьон</li>
+                                    <li>- Сыворотки</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="assortment__item blur-effect">
+                            <div class="assortment__item-img">
+                                <img src="./public/img/assortment-2.png" alt="Ассортимент Тело">
+                                
+                            </div>
+                            <div class="assortment__item-disc">
+                                <h5>Тело</h5>
+                                <ul class="assortment__item-points">
+                                    <li>- Масло против растяжек  </li>
+                                    <li>- Крем для ног</li>
+                                    <li>- Крем для тела</li>
+                                    <li>- Крем для рук</li>
+                                    <li>- Скрабы</li>
+                                    <li>- Масло для кутикулы</li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="assortment__item blur-effect">
+                            <div class="assortment__item-img">
+                                <img src="./public/img/assortment-3.png" alt="Ассортимент Волосы">
+                                
+                            </div>
+                            <div class="assortment__item-disc">
+                                <h5>Волосы</h5>
+                                <ul class="assortment__item-points">
+                                    <li>- Шампуни  </li>
+                                    <li>- Бальзамы для волос </li>
+                                    <li>- Маски для волос </li>
+                                    <li>- Масла для волос</li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="assortment__item blur-effect">
+                            <div class="assortment__item-img">
+                                <img src="./public/img/assortment-4.png" alt="Ассортимент Ванна/душ">
+                                
+                            </div>
+                            <div class="assortment__item-disc">
+                                <h5>Ванна/душ</h5>
+                                <ul class="assortment__item-points">
+                                    <li>- Гели для душа  </li>
+                                    <li>- Cоль для ванн </li>
+                                    <li>- Жидкое мыло</li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="assortment__item blur-effect">
+                            <div class="assortment__item-img">
+                                <img src="./public/img/assortment-5.png" alt="Ассортимент Для пляжа и солярия">
+                                
+                            </div>
+                            <div class="assortment__item-disc">
+                                <h5>Для пляжа и солярия</h5>
+                                <ul class="assortment__item-points">
+                                    <li>- Масла для загара  </li>
+                                    <li>- Крем после загара</li>
+                                    <li>- Гидролат</li>
+                                    <li>- Солнцезащитный крем SPF30</li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="assortment__item blur-effect">
+                            <div class="assortment__item-img">
+                                <img src="./public/img/assortment-6.png" alt="Ассортимент Ламинария">
+                                
+                            </div>
+                            <div class="assortment__item-disc">
+                                <h5>Ламинария</h5>
+                                <ul class="assortment__item-points">
+                                    <li>- Premium листовая ламинария  </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="main__button main__button-mob assortment__footer-button">
+                        Получит прайс
+                    </button>
+                </div>
+            </section>
+            <section class="section work">
+                <div class="container">
+                    <h2>Схема работы</h2>
+                    <div class="work__list">
+                        <div class="work__item ">
+                            <p class="work__number">1</p>
+                            <div class="work__item-content">
+                                <img src="./public/img/work-1.png" alt="">
+                                <div class="work__item-text">
+                                    <p>заявка</p>
+                                </div>
+
+                            </div>
+                            <div class="work__item-faq">
+                                Отправляете заявку, наш менеджер оперативно связывается с вами
+                            </div>
+                        </div>
+                        <div class="work__item">
+                            <p class="work__number">2</p>
+                            <div class="work__item-content">
+                                <img src="./public/img/work-2.png" alt="">
+                                <div class="work__item-text">
+                                    <p>стоимость</p>
+                                </div>
+                            </div>
+                            <div class="work__item-faq">
+                                Рассчитываем стоимость на основании прайса с учётом тары, этикетки и прочего
+                            </div>
+                        </div>
+                        <div class="work__item">
+                            <p class="work__number">3</p>
+                            <div class="work__item-content">
+                                <img src="./public/img/work-3.png" alt="">
+                                <div class="work__item-text">
+                                    <p>тестовые <br> образцы</p>
+                                </div>
+                            </div>
+                            <div class="work__item-faq">
+                                После подписания договора и внесения предоплаты предоставляем вам тестовые образцы, с возможностью выбора отдушки
+                            </div>
+                        </div>
+                        <div class="work__item">
+                            <p class="work__number">4</p>
+                            <div class="work__item-content">
+                                <img src="./public/img/work-4.png" alt="">
+                                <div class="work__item-text">
+                                    <p>дизайн и <br> упаковка</p>
+                                </div>
+                            </div>
+                            <div class="work__item-faq">
+                                Разрабатываем этикетку или вы предоставляете свою. Тара на выбор
+                            </div>
+                        </div>
+                        <div class="work__item">
+                            <p class="work__number">5</p>
+                            <div class="work__item-content">
+                                <img src="./public/img/work-5.png" alt="">
+                                <div class="work__item-text">
+                                    <p>готовый <br> продукт</p>
+                                </div>
+                            </div>
+                            <div class="work__item-faq">
+                                Согласовываем все этапы от рецептуры до этикетки, запускаем производство. Через 21 день* вы получите свой продукт.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section tara">
+                <div class="container tara__container">
+                    <h2>Тара</h2>
+                    <div class="tara__disc">
+                        <p class="tara__disc-text">У нас огромный каталог тары, которая есть в наличии, вам остается только выбрать ту, которая подойдет под ваш продукт</p>
+                        <button class=" tara__disc-button animated__button">
+                            <img src="./public/icons/message.svg" alt="">
+                            <p>Получить каталог тары</p>
+                        </button>
+                    </div>
+                    <div class="tara__list">
+                        <div class="tara__item blur-effect">
+                            <img src="./public/img/tara-1.jpg" alt="">
+                        </div>
+                        <div class="tara__item blur-effect">
+                            <img src="./public/img/tara-2.jpg" alt="">
+                        </div>
+                        <div class="tara__item blur-effect">
+                            <img src="./public/img/tara-3.jpg" alt="">
+                        </div>
+                        <div class="tara__item blur-effect">
+                            <img src="./public/img/tara-4.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section declaration">
+                <div class="container declaration__container">
+                    <h2>Вся наша продукция имеет декларации о соответствии</h2>
+                    <div class="declaration__list">
+                        <div class="declaration__item">
+                            <img src="./public/img/declaration-1.png" alt="">
+                        </div>
+                        <div class="declaration__item">
+                            <img src="./public/img/declaration-1.png" alt="">
+                        </div>
+                        <div class="declaration__item">
+                            <img src="./public/img/declaration-1.png" alt="">
+                        </div>
+                        <div class="declaration__item">
+                            <img src="./public/img/declaration-1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section contact">
+                <div class="container contact__container">
+                    <h2>Узнать подробнее <br> о контрактном производстве</h2>
+                    <h5>Оставьте контакты и наш менеджер свяжется с вами в ближайшее время</h5>
+                    <form method="post" class="contact__form" action="#">
+                        <div class="input__wrapper">
+                            <input required id="Call" type="text" name="call" placeholder="">
+                            <label for="Call">Имя</label>
+                        </div>
+                        <div class="input__wrapper">
+                            <input required id="Phone" type="text" name="Phone" placeholder="">
+                            <label for="Phone">Телефон</label>
+                        </div>
+                        <div class="input__wrapper">
+                            <input required id="Email" type="text" name="Email" placeholder="">
+                            <label for="Email">Email</label>
+                        </div>
+                        <div class="input__wrapper">
+                            <input required id="Comm" type="text" name="Comm" placeholder="">
+                            <label for="Comm">Комментарий</label>
+                        </div>
+                        <button type="submit" class=" contact__form-button animated__button">
+                            <img src="./public/icons/message.svg" alt="">
+                            <p>Отправить</p>
+                        </button>
+                    </form>
+                </div>
+            </section>
+            <footer class="footer">
+                <div class="container footer__container">
+                    <div class="footer__col">
+                        <img class="footer__logo" src="./logo.svg" alt="">
+                        <div class="footer__col-info">
+                            <a class="footer__col-info-number">+7 (923) 165 86 00</a>
+                            <a>glav.cosmetic@yandex.ru</a>
+                            <a>© 2016-2025 ООО «Ламинария шоп»</a>
+                        </div>
+                    </div>
+                    <div class="footer__col footer__col-links">
+                        <a href="#" class="footer__col-item">
+                            Ассортимент
+                        </a>
+                        <a href="#" class="footer__col-item">
+                            Ламинария листовая
+                        </a>
+                        <a href="#" class="footer__col-item">
+                            Команда
+                        </a>
+                        <a href="#" class="footer__col-item">
+                            Новости
+                        </a>
+                    </div>
+                    <div class="footer__col footer__col-links">
+                        <a href="#" class="footer__col-item">
+                            Тара
+                        </a>
+                        <a href="#" class="footer__col-item">
+                            Сертификация
+                        </a>
+                        <a href="#" class="footer__col-item">
+                            Как мы работаем
+                        </a>
+                        <a href="#" class="footer__col-item">
+                            Политика <br> конфиденциальности
+                        </a>
+                    </div>
+                    <div class="footer__links">
+                        <img src="./public/icons/vk.svg" alt="">
+                        <img src="./public/icons/tg.svg" alt="">
+                        <img src="./public/icons/tg.svg" alt="">
+                    </div>
+                </div>
+            </footer>
+            
+        </div>
+    </main>
+
+    <div class="modal-overlay">
+        <div class="modal-content">
+            <img src="" alt="declaration">
+        </div>
+    </div>
+
+    <div class="floating-chat" id="chat">
+        <div class="floating-toggle" id="chat-toggler">
+            <img src="./public/icons/whatsapp.svg" alt="WhatsApp" class="chat-icon active">
+            <img src="./public/icons/call.svg" alt="Telegram" class="chat-icon">
+        </div>
+        <button class="chat-close" id="chat-close">×</button>
+        <div class="chat-box">
+            <a href="https://wa.me/79999999999" target="_blank" class="chat-link">
+                <img src="./public/icons/whatsapp.svg" alt="WhatsApp">
+            </a>
+            <a href="https://t.me/your_telegram" target="_blank" class="chat-link">
+                <img src="./public/icons/call.svg" alt="Telegram">
+            </a>
+        </div>
+    </div>
+
+    <div class="popup__form">
+        <button class="popup__form-close" id="closePopup">
+            <img src="./public/icons/close.svg" alt="">
+        </button>
+        <div class="popup__form__wrapper">
+            <h2>Узнать подробнее о контрактном производстве</h2>
+            <h5>Оставьте свои данные и наш менеджер в свяжется с вами в ближайшее время</h5>
+            <form method="post" class="popup__form-action" action="#">
+                <div class="input__wrapper">
+                    <input required id="Call" type="text" name="call" placeholder="">
+                    <label for="Call">Имя</label>
+                </div>
+                <div class="input__wrapper">
+                    <input required id="Phone" type="text" name="Phone" placeholder="">
+                    <label for="Phone">Телефон</label>
+                </div>
+                <div class="input__wrapper">
+                    <input required id="Email" type="text" name="Email" placeholder="">
+                    <label for="Email">Email</label>
+                </div>
+                <div class="input__wrapper">
+                    <input required id="Comm" type="text" name="Comm" placeholder="">
+                    <label for="Comm">Комментарий</label>
+                </div>
+                <button type="submit" class=" contact__form-button animated__button">
+                    <img src="./public/icons/message.svg" alt="">
+                    <p>Отправить</p>
+                </button>
+                <p class="popup__form-undertext">Нажимая на кнопку «Отправить» вы соглашаетесь на <a href="">обработку персональных данных</a></p>
+            </form>
+        </div>
+    </div>
+    
+
+    <script src="./assets/js/libs/jquery-3.6.3.min.js"></script>
+    <script src="./assets/js/libs/slick.min.js"></script>
+
+    <script src="./assets/js/header.js"></script>
+    <script src="./assets/js/work-j.js"></script>
+    <script src="./assets/js/declaration-j.js"></script>
+    <script src="./assets/js/chat-j.js"></script>
+
+    <script src="./assets/js/assortment.js"></script>
+    <script src="./assets/js/general.js"></script>
+    <script src="./assets/js/tara.js"></script>
+
+
+</body>
+</html>
