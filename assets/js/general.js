@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const wrapper = document.querySelector(".popup__form__wrapper");
 
     // Открытие попапа
-    document.querySelectorAll(".animated__button").forEach(button => {
+    document.querySelectorAll(".toggle__popup").forEach(button => {
         button.addEventListener("click", () => {
             popup.classList.add("active");
             document.body.style.overflow = "hidden"; // Блокируем скролл

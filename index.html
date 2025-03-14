@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,19 +16,19 @@
     <header class="header" id="header">
         <div class="header__wrapper">
             <div class="header__logo">
-                <img src="./logo.svg" alt="">
+                <a href="./index.html"><img src="./logo.svg" alt=""></a>
             </div>
             <ul class="header__list header__list-pc">
-                <a href="">
+                <a href="./index.html">
                     <li>Ассортимент</li>
                 </a>
-                <a href="">
+                <a href="./laminaria.html">
                     <li>Ламинария листовая</li>
                 </a>
-                <a href="">
+                <a href="./team.html">
                     <li>Команда</li>
                 </a>
-                <a href="">
+                <a href="./news.html">
                     <li>Новости</li>
                 </a>
             </ul>
@@ -37,7 +37,7 @@
                     <a href="#" class="header__info-number">+7 (923) 165 86 00</a>
                     <a href="#" class="header__info-email">glav.cosmetic@yandex.ru</a>
                 </div>
-                <button class="header__link-button animated__button blur-effect">
+                <button class="header__link-button animated__button blur-effect toggle__popup">
                     <img src="./public/icons/message.svg" alt="">
                     <p>Получить консультацию</p>
                 </button>
@@ -51,16 +51,16 @@
         </div>
         <div class="header__menu-mobile">
             <ul class="header__list header__list-mob">
-                <a href="">
+                <a href="./index.html">
                     <li>Ассортимент</li>
                 </a>
-                <a href="">
+                <a href="./laminaria.html">
                     <li>Ламинария листовая</li>
                 </a>
-                <a href="">
+                <a href="./team.html">
                     <li>Команда</li>
                 </a>
-                <a href="">
+                <a href="./news.html">
                     <li>Новости</li>
                 </a>
             </ul>
@@ -69,7 +69,7 @@
                     <a href="#" class="header__info-number">+7 (923) 165 86 00</a>
                     <a href="#" class="header__info-email">glav.cosmetic@yandex.ru</a>
                 </div>
-                <button class="header__link-button">Получить консультацию</button>
+                <button class="header__link-button toggle__popup">Получить консультацию</button>
             </div>
         </div>
     </header>
@@ -78,7 +78,7 @@
             <section class="section welcome">
                 <div class="container">
                     <div class="welcome__title">
-                        <h1>Главный косметический завод</h1>
+                        <h1 class="welcome__title-heading">Главный косметический завод</h1>
                         <p class="welcome__title-disc-pc">от идеи до готового продукта с <br> минимальным заказом от 100 000 рублей</p>
                     </div>
                     <div class="welcome__intro">
@@ -107,10 +107,10 @@
             </section>
             <section class="section assortment">
                 <div class="container assortment__container">
-                    <h2>Ассортимент</h2>
+                    <h2 >Ассортимент</h2>
                     <div class="assortment__disc">
                         <p class="assortment__disc-text">Собственная лаборатория компании разработала более 1 000 рецептур, каждая из которых прошла тестирования и может быть адаптирована под ваш запрос. А если в наших рецептурах не окажется того что хочется именно вам, наш технолог создаст рецептуру для вас.</p>
-                        <button class=" assortment__disc-button animated__button">
+                        <button class=" assortment__disc-button animated__button toggle__popup">
                             <img src="./public/icons/message.svg" alt="">
                             <p>Получить прайс</p>
                         </button>
@@ -214,7 +214,7 @@
                             </div>
                         </div>
                     </div>
-                    <button class="main__button main__button-mob assortment__footer-button">
+                    <button class="main__button main__button-mob assortment__footer-button toggle__popup">
                         Получит прайс
                     </button>
                 </div>
@@ -292,22 +292,22 @@
                     <h2>Тара</h2>
                     <div class="tara__disc">
                         <p class="tara__disc-text">У нас огромный каталог тары, которая есть в наличии, вам остается только выбрать ту, которая подойдет под ваш продукт</p>
-                        <button class=" tara__disc-button animated__button">
+                        <button class=" tara__disc-button animated__button toggle__popup">
                             <img src="./public/icons/message.svg" alt="">
                             <p>Получить каталог тары</p>
                         </button>
                     </div>
                     <div class="tara__list">
-                        <div class="tara__item blur-effect">
+                        <div class="tara__item ">
                             <img src="./public/img/tara-1.jpg" alt="">
                         </div>
-                        <div class="tara__item blur-effect">
+                        <div class="tara__item ">
                             <img src="./public/img/tara-2.jpg" alt="">
                         </div>
-                        <div class="tara__item blur-effect">
+                        <div class="tara__item ">
                             <img src="./public/img/tara-3.jpg" alt="">
                         </div>
-                        <div class="tara__item blur-effect">
+                        <div class="tara__item ">
                             <img src="./public/img/tara-4.jpg" alt="">
                         </div>
                     </div>
@@ -433,7 +433,8 @@
 
     <div class="popup__form">
         <button class="popup__form-close" id="closePopup">
-            <img src="./public/icons/close.svg" alt="">
+            <img class="popup__form-close-pc" src="./public/icons/close.svg" alt="">
+            <img class="popup__form-close-mob" src="./public/icons/close-alt.svg" alt="">
         </button>
         <div class="popup__form__wrapper">
             <h2>Узнать подробнее о контрактном производстве</h2>
@@ -468,6 +469,9 @@
     <script src="./assets/js/libs/jquery-3.6.3.min.js"></script>
     <script src="./assets/js/libs/slick.min.js"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
     <script src="./assets/js/header.js"></script>
     <script src="./assets/js/work-j.js"></script>
     <script src="./assets/js/declaration-j.js"></script>
@@ -476,6 +480,7 @@
     <script src="./assets/js/assortment.js"></script>
     <script src="./assets/js/general.js"></script>
     <script src="./assets/js/tara.js"></script>
+    <script src="./assets/js/animation-gsap.js"></script>
 
 
 </body>

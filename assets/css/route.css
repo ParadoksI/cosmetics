@@ -1,0 +1,66 @@
+:root { 
+    --main-color: #b17b67;
+    --sec-color: #c19681;
+    --font-accent: #622d23;
+    --white-main: #fcfaf7;
+    --border-color: #8d897e;
+    --black-main: #000;
+    --color-active: #976b5b;
+    --footer-color: rgb(102, 69, 63);;
+}
+
+body { 
+    font-family: "Montserrat";
+    background-color: var(--white-main);
+}
+
+a { 
+    color: var(--black-main);
+}
+
+/* 1️⃣ ROUTER */
+
+@media screen and (min-width: 1200px) {
+    .router__wrapper { 
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        font-weight: 300;
+        color: var(--font-accent);
+        
+    }
+
+    .router__wrapper i { 
+        font-family: Arial, Helvetica, sans-serif;
+        float: left;
+        line-height: 19px;
+        height: 19px;
+    }
+
+    .router__wrapper p { 
+        color: var(--color-active);
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 1199px) {
+    .router__wrapper { 
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        font-weight: 300;
+        color: var(--font-accent);
+        padding: 0px 30px;
+        font-size: 12px;
+    }
+
+    .router__wrapper i { 
+        font-family: Arial, Helvetica, sans-serif;
+        float: left;
+        line-height: 19px;
+        height: 19px;
+    }
+
+    .router__wrapper p { 
+        color: var(--color-active);
+    }
+}
