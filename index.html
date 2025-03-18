@@ -16,20 +16,25 @@
     <header class="header" id="header">
         <div class="header__wrapper">
             <div class="header__logo">
-                <a href="./index.html"><img src="./logo.svg" alt=""></a>
+                <a href="./index.html">
+                    <img src="./logo.svg" alt="">
+                </a>
             </div>
             <ul class="header__list header__list-pc">
-                <a href="./index.html">
+                <a href="./index.html#welcome">
+                    <li>Главная</li>
+                </a>
+                <a href="./index.html#assortment">
                     <li>Ассортимент</li>
                 </a>
-                <a href="./laminaria.html">
-                    <li>Ламинария листовая</li>
+                <a href="./index.html#work">
+                    <li>Схема работы</li>
                 </a>
-                <a href="./team.html">
-                    <li>Команда</li>
+                <a href="./index.html#tara">
+                    <li>Тара</li>
                 </a>
-                <a href="./news.html">
-                    <li>Новости</li>
+                <a href="./index.html#contact">
+                    <li>Контакты</li>
                 </a>
             </ul>
             <div class="header__link-pc header__link">
@@ -51,7 +56,7 @@
         </div>
         <div class="header__menu-mobile">
             <ul class="header__list header__list-mob">
-                <a href="./index.html">
+                <a href="./index.html#assortment">
                     <li>Ассортимент</li>
                 </a>
                 <a href="./laminaria.html">
@@ -75,7 +80,7 @@
     </header>
     <main class="main" id="main">
         <div class="wrapper">
-            <section class="section welcome">
+            <section class="section welcome" id="welcome">
                 <div class="container">
                     <div class="welcome__title">
                         <h1 class="welcome__title-heading">Главный косметический завод</h1>
@@ -105,7 +110,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section assortment">
+            <section class="section assortment" id="assortment">
                 <div class="container assortment__container">
                     <h2 >Ассортимент</h2>
                     <div class="assortment__disc">
@@ -116,9 +121,9 @@
                         </button>
                     </div>
                     <div class="assortment__list">
-                        <div class="assortment__item blur-effect">
+                        <div class="assortment__item blur-effect toggle__popup">
                             <div class="assortment__item-img">
-                                <img src="./public/img/assortment-1.png" alt="Ассортимент Лицо">
+                                <img src="./public/img/assortment-1.jpg" alt="Ассортимент Лицо">
                                 
                             </div>
                             <div class="assortment__item-disc">
@@ -135,9 +140,9 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="assortment__item blur-effect">
+                        <div class="assortment__item blur-effect toggle__popup">
                             <div class="assortment__item-img">
-                                <img src="./public/img/assortment-2.png" alt="Ассортимент Тело">
+                                <img src="./public/img/assortment-2.jpg" alt="Ассортимент Тело">
                                 
                             </div>
                             <div class="assortment__item-disc">
@@ -153,9 +158,9 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="assortment__item blur-effect">
+                        <div class="assortment__item blur-effect toggle__popup">
                             <div class="assortment__item-img">
-                                <img src="./public/img/assortment-3.png" alt="Ассортимент Волосы">
+                                <img src="./public/img/assortment-3.JPG" alt="Ассортимент Волосы">
                                 
                             </div>
                             <div class="assortment__item-disc">
@@ -169,9 +174,9 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="assortment__item blur-effect">
+                        <div class="assortment__item blur-effect toggle__popup">
                             <div class="assortment__item-img">
-                                <img src="./public/img/assortment-4.png" alt="Ассортимент Ванна/душ">
+                                <img src="./public/img/assortment-4.JPG" alt="Ассортимент Ванна/душ">
                                 
                             </div>
                             <div class="assortment__item-disc">
@@ -184,9 +189,9 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="assortment__item blur-effect">
+                        <div class="assortment__item blur-effect toggle__popup">
                             <div class="assortment__item-img">
-                                <img src="./public/img/assortment-5.png" alt="Ассортимент Для пляжа и солярия">
+                                <img src="./public/img/assortment-5.JPG" alt="Ассортимент Для пляжа и солярия">
                                 
                             </div>
                             <div class="assortment__item-disc">
@@ -200,33 +205,21 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="assortment__item blur-effect">
-                            <div class="assortment__item-img">
-                                <img src="./public/img/assortment-6.png" alt="Ассортимент Ламинария">
-                                
-                            </div>
-                            <div class="assortment__item-disc">
-                                <h5>Ламинария</h5>
-                                <ul class="assortment__item-points">
-                                    <li>- Premium листовая ламинария  </li>
-                                    
-                                </ul>
-                            </div>
-                        </div>
+                        
                     </div>
                     <button class="main__button main__button-mob assortment__footer-button toggle__popup">
                         Получит прайс
                     </button>
                 </div>
             </section>
-            <section class="section work">
+            <section class="section work" id="work">
                 <div class="container">
                     <h2>Схема работы</h2>
                     <div class="work__list">
                         <div class="work__item ">
                             <p class="work__number">1</p>
                             <div class="work__item-content">
-                                <img src="./public/img/work-1.png" alt="">
+                                <img src="./public/img/assortment-6.JPG" alt="">
                                 <div class="work__item-text">
                                     <p>заявка</p>
                                 </div>
@@ -239,7 +232,7 @@
                         <div class="work__item">
                             <p class="work__number">2</p>
                             <div class="work__item-content">
-                                <img src="./public/img/work-2.png" alt="">
+                                <img src="./public/img/work-1.JPG" alt="">
                                 <div class="work__item-text">
                                     <p>стоимость</p>
                                 </div>
@@ -248,20 +241,9 @@
                                 Рассчитываем стоимость на основании прайса с учётом тары, этикетки и прочего
                             </div>
                         </div>
+                        
                         <div class="work__item">
                             <p class="work__number">3</p>
-                            <div class="work__item-content">
-                                <img src="./public/img/work-3.png" alt="">
-                                <div class="work__item-text">
-                                    <p>тестовые <br> образцы</p>
-                                </div>
-                            </div>
-                            <div class="work__item-faq">
-                                После подписания договора и внесения предоплаты предоставляем вам тестовые образцы, с возможностью выбора отдушки
-                            </div>
-                        </div>
-                        <div class="work__item">
-                            <p class="work__number">4</p>
                             <div class="work__item-content">
                                 <img src="./public/img/work-4.png" alt="">
                                 <div class="work__item-text">
@@ -273,7 +255,7 @@
                             </div>
                         </div>
                         <div class="work__item">
-                            <p class="work__number">5</p>
+                            <p class="work__number">4</p>
                             <div class="work__item-content">
                                 <img src="./public/img/work-5.png" alt="">
                                 <div class="work__item-text">
@@ -287,7 +269,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section tara">
+            <section class="section tara" id="tara">
                 <div class="container tara__container">
                     <h2>Тара</h2>
                     <div class="tara__disc">
@@ -313,7 +295,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section declaration">
+            <!-- <section class="section declaration">
                 <div class="container declaration__container">
                     <h2>Вся наша продукция имеет декларации о соответствии</h2>
                     <div class="declaration__list">
@@ -331,8 +313,8 @@
                         </div>
                     </div>
                 </div>
-            </section>
-            <section class="section contact">
+            </section> -->
+            <section class="section contact" id="contact">
                 <div class="container contact__container">
                     <h2>Узнать подробнее <br> о контрактном производстве</h2>
                     <h5>Оставьте контакты и наш менеджер свяжется с вами в ближайшее время</h5>
@@ -371,30 +353,28 @@
                         </div>
                     </div>
                     <div class="footer__col footer__col-links">
-                        <a href="#" class="footer__col-item">
+                        <a href="./index.html#assortmant" class="footer__col-item">
                             Ассортимент
                         </a>
-                        <a href="#" class="footer__col-item">
+                        <a href="./laminaria.html" class="footer__col-item">
                             Ламинария листовая
                         </a>
-                        <a href="#" class="footer__col-item">
+                        <a href="./team.html" class="footer__col-item">
                             Команда
                         </a>
-                        <a href="#" class="footer__col-item">
+                        <a href="./news.html" class="footer__col-item">
                             Новости
                         </a>
                     </div>
                     <div class="footer__col footer__col-links">
-                        <a href="#" class="footer__col-item">
+                        <a href="./index.html#tara" class="footer__col-item">
                             Тара
                         </a>
-                        <a href="#" class="footer__col-item">
-                            Сертификация
-                        </a>
-                        <a href="#" class="footer__col-item">
+                        
+                        <a href="./index.html#work" class="footer__col-item">
                             Как мы работаем
                         </a>
-                        <a href="#" class="footer__col-item">
+                        <a href="./privacy.html" class="footer__col-item">
                             Политика <br> конфиденциальности
                         </a>
                     </div>

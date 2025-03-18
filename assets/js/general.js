@@ -71,5 +71,56 @@ document.addEventListener("DOMContentLoaded", () => {
             document.body.style.overflow = "";
         }
     });
+
+    const header = document.querySelector(".header");
+    const links = document.querySelectorAll(".header__list a[href^='./index.html#']");
+    const sections = {};
+
+    if (!links.length || !header) return;
+
+    // Определяем высоту header для корректировки скролла
+    function getHeaderHeight() {
+        return window.innerWidth > 1200 ? 108 : 98;
+    }
+
+    // Заполняем объект секциями
+    links.forEach(link => {
+        const sectionId = link.getAttribute("href").split("#")[1];
+        const section = document.getElementById(sectionId);
+        if (section) {
+            sections[sectionId] = section;
+        }
+
+        // Добавляем плавный скролл при клике
+        link.addEventListener("click", function (e) {
+            e.preventDefault();
+            const headerHeight = getHeaderHeight();
+
+            window.scrollTo({
+                top: section.offsetTop - headerHeight,
+                behavior: "smooth",
+            });
+        });
+    });
+
+    // Функция для подсветки активного пункта меню
+    function highlightMenu() {
+        const scrollPosition = window.scrollY + getHeaderHeight() + 200; // Дополнительный отступ
+
+        for (const sectionId in sections) {
+            const section = sections[sectionId];
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.offsetHeight;
+
+            if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                links.forEach(link => link.classList.remove("active"));
+                document.querySelector(`.header__list a[href='./index.html#${sectionId}']`).classList.add("active");
+                break;
+            }
+        }
+    }
+
+    window.addEventListener("scroll", highlightMenu);
+    highlightMenu(); // Проверяем при загрузке страницы
     
 });

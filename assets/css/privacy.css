@@ -49,3 +49,39 @@ a {
         font-family: 'Montserrat';
     }
 }
+
+@media screen and (min-width: 300px) and (max-width: 1199px) {
+    .privacy__container { 
+        padding: 0px 30px;
+    }
+    
+    .privacy__name { 
+        text-align: center;
+        color: #622d23;
+        font-weight: 300;
+        font-family: 'Montserrat';
+        text-transform: uppercase;
+        margin-bottom: 40px;
+    }
+
+    .privacy__container h2 { 
+        color: var(--font-accent);
+        margin-bottom: 40px;
+        font-size: 32px;
+        line-height: 1.23;
+        text-align: center;
+    }
+
+    .privacy__text__box p { 
+        font-size: 18px;
+        color: #622d23;
+        font-family: 'Montserrat';
+    }
+
+    .privacy__text__box strong { 
+        font-weight: 700;
+        font-size: 18px;
+        color: #622d23;
+        font-family: 'Montserrat';
+    }
+}
